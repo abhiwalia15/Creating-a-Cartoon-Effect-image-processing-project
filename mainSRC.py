@@ -5,7 +5,7 @@ import numpy as np
 #read the image
 img = cv2.imread('abhi.jpg')
 
-# 1)first create the gray scale image with Edges
+# 1)first create the gray scale image and get its blur image with Edges
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 gray = cv2.medianBlur(gray, 5)
 edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 9, 9)
@@ -14,7 +14,8 @@ edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_
 # 2)Secondly we will Colorise the image using bilateral filter method
 color = cv2.bilateralFilter(img, 9, 300, 300)
 
-# 3) Cartoon
+# 3)Lastly we will add the color image and the blkwht image with edges 
+#   using the bitwise and operator and get our final Cartoon image
 cartoon = cv2.bitwise_and(color, color, mask=edges)
 
 
