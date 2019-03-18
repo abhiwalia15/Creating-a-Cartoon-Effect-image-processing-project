@@ -19,8 +19,16 @@ color = cv2.bilateralFilter(img, 9, 300, 300)
 cartoon = cv2.bitwise_and(color, color, mask=edges)
 
 
+
+#show the result
+
+#show the original image
 cv2.imshow("Image", img)
+
+#show the cartoon image
 cv2.imshow("Cartoon", cartoon)
+
+#
 cv2.imshow("color", color)
 cv2.imshow("edges", edges)
 cv2.waitKey(0)
