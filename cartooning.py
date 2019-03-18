@@ -14,6 +14,6 @@ cv2.imshow("CARTOONED IMAGE", img)
 cv2.imshow("Image with Edges", edges)
 
 
-cv2.waitKey(0)
+cv2.waitKey(0) 
 cv2.destroyAllWindows()
 
