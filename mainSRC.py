@@ -31,7 +31,9 @@ cv2.imshow("Cartoon", cartoon)
 #show the color image
 cv2.imshow("color", color)
 
-#
+#show the blur image with edges
 cv2.imshow("edges", edges)
+
+#terminate the result
 cv2.waitKey(0)
 cv2.destroyAllWindows()
