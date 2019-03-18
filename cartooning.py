@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 #read theimage
-img = cv2.imread('Test Images/abhi.jpg')
+img = cv2.imread('abhi.jpg')
 
 #threshold of gray scale image
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
