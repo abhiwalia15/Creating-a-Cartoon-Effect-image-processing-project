@@ -1,6 +1,7 @@
-#import modules
+#import computer vision library
 import cv2
-import numpy as np
+
+
 
 #read the image
 img = cv2.imread('abhi.jpg')
@@ -18,7 +19,7 @@ color = cv2.bilateralFilter(img, 9, 300, 300)
 #   using the bitwise and operator and get our final Cartoon image
 cartoon = cv2.bitwise_and(color, color, mask=edges)
 
-
+######################################################################################################
 
 #show the result
 
