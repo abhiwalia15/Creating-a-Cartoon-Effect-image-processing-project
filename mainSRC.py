@@ -28,8 +28,10 @@ cv2.imshow("Image", img)
 #show the cartoon image
 cv2.imshow("Cartoon", cartoon)
 
-#
+#show the color image
 cv2.imshow("color", color)
+
+#
 cv2.imshow("edges", edges)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
